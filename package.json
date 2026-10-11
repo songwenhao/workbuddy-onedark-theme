@@ -1,0 +1,35 @@
+{
+	"name": "workbuddy-onedark-theme",
+	"version": "0.1.0",
+	"description": "One Dark Pro themes for WorkBuddy AI: faithful dark flavors registered over WorkBuddy's --wb-palette/--wb-color token system, shipped as a CDP-injectable stylesheet plus an official skin-package (manifest + CSS) for future marketplace listing",
+	"license": "MIT",
+	"author": "workbuddy-onedark-theme contributors",
+	"keywords": [
+		"workbuddy",
+		"workbuddy-ai",
+		"codebuddy",
+		"theme",
+		"skin",
+		"one-dark-pro",
+		"onedark"
+	],
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"gen": "node scripts/gen-css.mjs",
+		"package:skin": "pwsh -NoProfile -File scripts/pack-skin.ps1",
+		"apply": "node scripts/inject.mjs apply",
+		"launch": "node scripts/inject.mjs launch",
+		"stop": "node scripts/inject.mjs revert",
+		"status": "node scripts/inject.mjs status"
+	},
+	"files": [
+		"palette",
+		"skin",
+		"skin-package",
+		"scripts",
+		"Start-OneDarkPro.ps1"
+	]
+}

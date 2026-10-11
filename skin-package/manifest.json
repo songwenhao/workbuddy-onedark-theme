@@ -1,0 +1,10 @@
+{
+	"name": "One Dark Pro",
+	"version": "0.1.0",
+	"description": "One Dark Pro (Binaryify/OneDark-Pro, MIT) mapped onto WorkBuddy's --wb-palette/--wb-color token system. Dark surfaces #282c34/#21252b, accent #61afef, text #abb2bf.",
+	"css": "onedark-pro.css",
+	"appearance": "dark",
+	"resourceKey": "onedark-pro",
+	"author": "workbuddy-onedark-theme contributors",
+	"license": "MIT"
+}
